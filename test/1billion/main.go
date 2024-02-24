@@ -42,7 +42,7 @@ func main() {
 				fmt.Printf("urlsChan的 数量: %d \n", len(urlsChan))
 				fmt.Printf("goroutine 数量: %d \n", runtime.NumGoroutine())
 				runtime.ReadMemStats(&mem)
-				fmt.Printf("TotalAlloc = %v MB", mem.Alloc/1024/1024/8)
+				fmt.Printf("Alloc = %v MB\n", mem.Alloc/1024/1024/8)
 			}
 		}
 	}()

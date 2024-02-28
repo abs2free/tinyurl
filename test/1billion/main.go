@@ -30,10 +30,10 @@ func main() {
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
 
-	urlsChan := make(chan []model.TinyURL, 20000)
+	urlsChan := make(chan []model.TinyURL, 2000)
 	// 监测
 	go func() {
-		ticker := time.NewTicker(1 * time.Second)
+		ticker := time.NewTicker(500 * time.Millisecond)
 		var mem runtime.MemStats
 
 		for {

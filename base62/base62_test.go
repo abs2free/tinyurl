@@ -3,7 +3,7 @@ package base62_test
 import (
 	"testing"
 
-	"github.com/abs2free/tinyurl/store/util/base62"
+	"github.com/abs2free/tinyurl/base62"
 	"github.com/stretchr/testify/assert"
 )
 
